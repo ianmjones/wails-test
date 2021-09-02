@@ -20,3 +20,16 @@ modules:
     buildsystem: simple
     build-commands:
       - install -D build/wails-test /app/bin/wails-test
+
+    #
+    # Build from GitHub releases tgz.
+    # This kind of setup is good for Flathub.
+    #
+    #sources:
+    #  - type: archive
+    #    url: https://github.com/ianmjones/wails-test/releases/download/0.1.0/wails-test-0.1.0.tgz
+    #    sha256: '3a5e38f4d8238d27f90c99bd9c6d073a0909c21f3a44b8cbc46ee54722272343'
+    #    strip-components: 0 # By default flatpak-builder expects tgz to include a subdir, but mine doesn't.
+    #buildsystem: simple
+    #build-commands:
+    #  - install -D wails-test /app/bin/wails-test
