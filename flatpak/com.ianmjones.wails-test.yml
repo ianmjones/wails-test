@@ -11,6 +11,9 @@ finish-args:
   - '--device=dri'
 modules:
   - name: wails-test
+    #
+    # Just install the binary from the local filesystem.
+    #
     sources:
       - type: dir
         path: ..
