@@ -1,12 +1,12 @@
 package main
 
 import (
-    _ "embed"
+	_ "embed"
 	"github.com/wailsapp/wails"
 )
 
 func basic() string {
-	return "World!"
+	return "Linux Packaged World!"
 }
 
 //go:embed frontend/public/build/bundle.js
